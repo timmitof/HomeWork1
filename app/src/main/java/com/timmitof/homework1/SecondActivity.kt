@@ -19,7 +19,7 @@ class SecondActivity : AppCompatActivity() {
         val name = intent.getStringExtra("NAME")
         val surname = intent.getStringExtra("SURNAME")
 
-        textName.text = name + " " + surname
+        textName.text = "$name $surname"
         backButton.setOnClickListener {
             onBackPressed()
         }

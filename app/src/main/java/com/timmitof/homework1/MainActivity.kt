@@ -38,6 +38,18 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            else if (name.isBlank()){
+                namef.error = "Введите имя"
+                Toast.makeText(this, "Заполните поля!", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
+
+            else if (surname.isBlank()){
+                surnamef.error = "Введите фамилию"
+                Toast.makeText(this, "Заполните поля!", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
+
             if (name != null && surname != null) {
 
                 val intent = Intent(this, SecondActivity::class.java)
