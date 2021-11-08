@@ -26,19 +26,7 @@ class MainActivity : AppCompatActivity() {
             val name = namef.text.toString()
             val surname = surnamef.text.toString()
 
-            if (name.isEmpty()){
-                namef.error = "Введите имя"
-                Toast.makeText(this, "Заполните поля!", Toast.LENGTH_LONG).show()
-                return@setOnClickListener
-            }
-
-            else if (surname.isEmpty()){
-                surnamef.error = "Введите фамилию"
-                Toast.makeText(this, "Заполните поля!", Toast.LENGTH_LONG).show()
-                return@setOnClickListener
-            }
-
-            else if (name.isBlank()){
+            if (name.isBlank()){
                 namef.error = "Введите имя"
                 Toast.makeText(this, "Заполните поля!", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
